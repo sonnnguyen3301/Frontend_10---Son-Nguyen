@@ -1,0 +1,29 @@
+
+body {
+padding: 20px;
+}
+
+.border {
+font-size:150%;
+width: 500px;
+height: 50px;
+/* background: #f06d06; */
+position: relative;
+border: 6px solid #24ed1f;
+margin: auto;
+text-align: center;
+font-weight: bold;
+vertical-align: middle;
+line-height: 50px;
+}
+.border:after {
+content: '';
+position: absolute;
+top: -10px;
+left: -10px;
+right: -10px;
+bottom: -10px;
+border: 3px solid #dc5769;
+z-index: -1;
+}
+  
