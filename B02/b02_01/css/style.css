@@ -1,7 +1,7 @@
 .box {
-    margin: 200px auto;
-    width: 250px;
-    height: 200px;
+    margin:150px auto;
+    width: 400px;
+    height: 350px;
     padding: 20px;
     /* border: 8px solid red; */
     background: #3f1b6d;
@@ -9,6 +9,9 @@
     vertical-align: middle;
     line-height: 140px;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
   .content-box {
