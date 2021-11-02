@@ -1,16 +1,15 @@
 .box {
-    margin: auto;
+    margin: 200px auto;
     width: 250px;
-    height: 150px;
+    height: 200px;
     padding: 20px;
     /* border: 8px solid red; */
-    background: purple;
+    background: #3f1b6d;
     text-align: center;
     vertical-align: middle;
-    line-height: 95px;
+    line-height: 140px;
     color: white;
-
-  }
+}
   
   .content-box {
     box-sizing: content-box;
