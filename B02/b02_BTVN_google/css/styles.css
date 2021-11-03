@@ -1,0 +1,258 @@
+.header {
+    height: 40px;
+    width: 100%;
+    /* background-color: goldenrod; */
+    display: inline-block;
+    overflow: hidden;
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    cursor: pointer;
+}
+    .header .right{
+        float: right;
+        display: inline-block;
+        text-align: center;
+        line-height: 40px;
+    }
+    .header .right a:hover{
+        text-decoration: underline;
+    }
+    .header .right .gmail{
+        padding-right: 15px;
+    }
+    .header .right .gmail a:hover{
+        text-decoration: underline;
+    }
+    .header .right .image{
+        padding-right: 20px;
+    }
+    .header .right .icon{
+        padding-right: 15px;  
+        text-decoration: none;
+    }
+    .header .right .icon img{
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+    }
+    .header .right .avatar{
+        padding-right: 15px;
+    }
+        .header .right .avatar img{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;    
+            vertical-align: middle;
+        }
+        /* .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+          }
+          
+            .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            position: absolute;
+            z-index: 1;
+            width: 120px;
+            top: 100%;
+            left: 20%;
+            margin-left: -60px; 
+            }
+            
+            .tooltip:hover .tooltiptext {
+            visibility: visible;
+            } */
+/* MAIN */
+.main{
+    margin-top: 80px;
+    padding-top: 100px;
+    position: relative;
+    display: block;
+    height: 50px;
+}
+    .main img{
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+    }
+.middle{
+    position: relative;
+    height: 100px;
+}
+    .middle #search-form{
+        position: absolute;
+        top:30%; left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+    }
+    .middle #search-form span.button span{
+        position: relative;
+    }
+        .middle #search-form span.button span > img{
+            position: absolute;       
+        }
+        .middle #search-form span.button span .mic{
+            top: 2px;
+            right: 10px;
+            width: 15px;
+            height: 20px;
+        }
+        .middle #search-form span.button span .searchIcon{
+            top: 1px;
+            left: 10px;
+            width: 18px;
+            height: 18px;
+            margin-left: -40px;
+        }
+        .middle #search-form span.button span .keyboard{
+            top: 1px;
+            right: 45px;
+            width: 20px;
+            height: 20px;
+            /* margin-left: 40px; */
+        }
+        
+        .middle #search-form span.button span > img:hover{
+            opacity: 0.9;
+            cursor: pointer;
+        }
+        .middle #search-form span.button span > input{
+            width: 500px;
+            height: 40px;
+            border-style: hidden;
+            outline: none;
+            font-size: 15px;
+        }
+.middle .buttonBelow{
+    position: relative;
+    height: 30px;
+    padding: 7px;
+}
+    .middle .buttonBelow .search_button{
+        position: absolute;
+        top: 100%; left: 50%;
+        transform: translate(-150%,150%);
+        z-index: 1; 
+        font-size: 15px;
+        outline: none;
+        border-style: hidden;
+        opacity: 0.8;
+    }
+    .middle .buttonBelow .search_button:hover{
+        cursor: pointer;
+        opacity: 0.9;
+    }
+    .middle .buttonBelow .page_button{
+        position: absolute;
+        top: 100%; right: 50%;
+        transform: translate(90%,150%);
+        z-index: 1; 
+        font-size: 15px;
+        /* font-family: arial,sans-serif; */
+        outline: none;
+        border-style: hidden;
+        opacity: 0.8;
+    }
+    .middle .buttonBelow .page_button:hover{
+        cursor: pointer;
+        opacity: 0.9;
+    }
+.link{
+    padding: 3px;
+    color: #3645bf;
+    text-decoration: none;
+}
+.textNote{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,200%);
+    z-index: 1;
+    opacity: 0.9;
+    font-size: 15px;
+}
+.textNote .link:hover{
+    text-decoration: underline;
+}
+.googleLanguage{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,400%);
+    z-index: 1;
+    opacity: 0.9;
+    font-size: 15px;
+}
+    .googleLanguage .link:hover{
+        text-decoration: underline;
+    }
+.leftCorner{
+    position:absolute;
+    left: 30px;
+    bottom: 60px;
+    opacity: 0.9;
+}
+/* FOOTER */
+.footer {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid #ced4da;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 15px;
+    font-family: arial,sans-serif;
+    line-height: 50px;
+    bottom: 0;
+    color: #82808d;
+}
+    .footer .left{
+        float: left;
+        display: inline-block;
+        text-align: center;
+        padding-left: 15px;
+       
+    }
+        .footer .left a:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .footer .left .rec{
+            padding-left: 15px;
+        }
+        .footer .left .ad{
+            padding-left: 15px;
+        }
+        .footer .left .enterprise{
+            padding-left: 15px;
+        }
+        .footer .left .search{
+            padding-left: 15px;
+        }
+
+    .footer .right{
+        float: right;
+        display: inline-block;
+        text-align: center;
+        padding-right: 25px;
+    }
+        .footer .right a:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .footer .right .secure{
+            padding-right: 15px;
+        }
+        .footer .right .rule{
+            padding-right: 15px;
+        }
+        .footer .right .setting{
+            padding-right: 15px;
+        }
