@@ -104,21 +104,19 @@
             top: 2px;
             right: 10px;
             width: 15px;
-            height: 20px;
+            height: 20px;          
         }
         .middle #search-form span.button span .searchIcon{
             top: 1px;
             left: 10px;
             width: 18px;
             height: 18px;
-            margin-left: -40px;
         }
         .middle #search-form span.button span .keyboard{
             top: 1px;
             right: 45px;
             width: 20px;
             height: 20px;
-            /* margin-left: 40px; */
         }
         
         .middle #search-form span.button span > img:hover{
@@ -126,11 +124,12 @@
             cursor: pointer;
         }
         .middle #search-form span.button span > input{
-            width: 500px;
+            width: 550px;
             height: 40px;
             border-style: hidden;
             outline: none;
             font-size: 15px;
+            margin-left: 40px;
         }
 .middle .buttonBelow{
     position: relative;
@@ -143,9 +142,9 @@
         transform: translate(-150%,150%);
         z-index: 1; 
         font-size: 15px;
-        outline: none;
         border-style: hidden;
         opacity: 0.8;
+        background-color: #f8f9fa;
     }
     .middle .buttonBelow .search_button:hover{
         cursor: pointer;
@@ -157,10 +156,9 @@
         transform: translate(90%,150%);
         z-index: 1; 
         font-size: 15px;
-        /* font-family: arial,sans-serif; */
-        outline: none;
         border-style: hidden;
         opacity: 0.8;
+        background-color: #f8f9fa;
     }
     .middle .buttonBelow .page_button:hover{
         cursor: pointer;
