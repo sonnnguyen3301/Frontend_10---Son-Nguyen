@@ -12,6 +12,7 @@
     font-size: 13px;
     font-family: arial,sans-serif;
     cursor: pointer;
+    margin-top: 10px;
 }
     .header .right{
         float: right;
@@ -54,6 +55,7 @@
         width: 32px;
         height: 32px;
         margin-right: 15px; 
+        border-radius: 50%;
     }
     .header .right .avatar:hover{
         background-color: #82808d;
