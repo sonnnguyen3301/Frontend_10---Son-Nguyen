@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .header {
     height: 40px;
     width: 100%;
@@ -18,25 +23,40 @@
         text-decoration: underline;
     }
     .header .right .gmail{
-        padding-right: 15px;
+        margin-right: 15px; 
     }
     .header .right .gmail a:hover{
         text-decoration: underline;
     }
     .header .right .image{
-        padding-right: 20px;
+        margin-right: 15px; 
     }
     .header .right .icon{
-        padding-right: 15px;  
+        width: 30px;
+        height: 30px;
         text-decoration: none;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 30px;
+        margin-right: 15px; 
+        opacity: 0.7;
+    }
+    .header .right .icon:hover{
+        background-color: #82808d;
     }
     .header .right .icon img{
-        width: 25px;
-        height: 25px;
+        width: 15px;
+        height: 15px;
         vertical-align: middle;
     }
     .header .right .avatar{
-        padding-right: 15px;
+        box-shadow: inset;
+        width: 32px;
+        height: 32px;
+        margin-right: 15px; 
+    }
+    .header .right .avatar:hover{
+        background-color: #82808d;
     }
         .header .right .avatar img{
             width: 32px;
@@ -44,36 +64,11 @@
             border-radius: 50%;    
             vertical-align: middle;
         }
-        /* .tooltip {
-            position: relative;
-            display: inline-block;
-            border-bottom: 1px dotted black;
-          }
-          
-            .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 120px;
-            background-color: black;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px 0;
-
-            position: absolute;
-            z-index: 1;
-            width: 120px;
-            top: 100%;
-            left: 20%;
-            margin-left: -60px; 
-            }
-            
-            .tooltip:hover .tooltiptext {
-            visibility: visible;
-            } */
+        
 /* MAIN */
 .main{
     margin-top: 80px;
-    padding-top: 100px;
+    padding-top: 150px;
     position: relative;
     display: block;
     height: 50px;
@@ -172,7 +167,7 @@
 .textNote{
     position: absolute;
     top: 50%; left: 50%;
-    transform: translate(-50%,200%);
+    transform: translate(-50%,50%);
     z-index: 1;
     opacity: 0.9;
     font-size: 15px;
@@ -183,7 +178,7 @@
 .googleLanguage{
     position: absolute;
     top: 50%; left: 50%;
-    transform: translate(-50%,400%);
+    transform: translate(-50%,200%);
     z-index: 1;
     opacity: 0.9;
     font-size: 15px;
