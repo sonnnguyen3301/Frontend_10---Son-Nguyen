@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7f4fb;
+}
+.wrapper{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 600px;
+    width: 800px;
+    position: absolute; 
+    background-color: white;
+    border-radius: 5px;
+}
+
+    .wrapper .box{
+        float: left;
+        height: 90%;
+        margin: 30px -5px 10px 30px;
+    }
+        
+        /* LEFT BOX */
+        .wrapper  .leftBox{
+            background:linear-gradient(150deg, #d2c3e5 ,#6d58cd ) repeat;
+            width: 40%;   
+        }
+
+        /* RIGHT BOX */
+        .wrapper .rightBox{
+            width: 50%; 
+            position: relative;
+        }
+        .wrapper .rightBox h3{
+            width: 50%; 
+            margin:65px 0px 20px 35px;
+        }
+        .wrapper .rightBox label{
+            margin:65px 0px 10px 35px;
+        }
+        .wrapper .rightBox input[type=text], select {
+            width: 70%;
+            padding: 12px 20px;
+            margin: 8px 0px 30px 35px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .wrapper .rightBox .container {
+            position: relative;
+            cursor: pointer;
+            font-size: 15px;
+            user-select: none;
+        }
+        .wrapper .rightBox .container a{
+            /* padding-right: 10px; */
+            font-size: 13px;
+            margin-left: 25px;
+        }
+        .wrapper .rightBox .container input{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        .wrapper .rightBox .container .checkmark{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: #eee;
+            
+        }
+        .container:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+        .container input:checked ~ .checkmark {
+            background-color: #2196F3;
+        }
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        .container input:checked ~ .checkmark:after {
+            display: block;
+        }
+        .container .checkmark:after {
+            left: 6px;
+            top: 2px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .wrapper .rightBox input[type=submit] {
+            width: 70%;
+            background-color: #765fd1;
+            color: white;
+            padding: 14px 20px;
+            margin: 25px 0px 35px 35px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .wrapper .rightBox input[type=submit]:hover {
+            background-color: #6d58cd;
+        }
+          
+           
+
