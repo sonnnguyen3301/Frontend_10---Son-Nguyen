@@ -36,6 +36,7 @@ body{
         align-items: center;
         justify-content: space-between;
         margin-top: 30px;
+        color: white;
     }
     .wrapper .header .header_top_taskbar .header_taskbar{
         width: 600px;
@@ -107,6 +108,7 @@ body{
         display: flex;
         align-items: flex-end;
         padding-top: 20px;
+        color:white;
     }
         .wrapper .header .header_footer .footer_progress .number_tag{
             font-size: 25px;
@@ -120,11 +122,8 @@ body{
 /* ############ Main - FOOTER ############# */
 
 .wrapper .main{
+    height: 750px;
 }
-    .wrapper .main .main_about_us 
-    {   
-        height: 750px;
-    }
         .wrapper .main .main_about_us .nav_top{
             margin-top: 90px;
             font-family: 'Kaushan Script', cursive;
@@ -148,3 +147,27 @@ body{
             text-align: center;
             margin-top: 45px;
         }
+.wrapper .main .main_about_us_image{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}   
+    .wrapper .main .main_about_us_image .image1{
+        background-image: url('/images/Rectangle 6_background_lime_hover.png');  
+        position: relative;  
+    }
+    .wrapper .main .main_about_us_image .image1 img{
+        position: relative;
+        top: -10px;
+        left: -10px;
+    }
+    .wrapper .main .main_about_us_image .image1 .User_hover{
+        position: absolute;
+        height: 50px;
+    }
+    .wrapper .main .main_about_us_image .image1 .User_hover .user_logo{
+        /* text-align: center; */
+    }
+    .wrapper .main .main_about_us_image .image1 .User_hover .text{
+
+    }
