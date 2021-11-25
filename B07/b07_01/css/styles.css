@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+/* Set default li */
+li{
+    font-size: 14px;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    
+}
+button{
+    color: white;
+}
+p{
+    font-size: 16px;
+}
+body{
+    background-image:url('/images/Bird_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 1000px;
+}
+.wrapper{
+    width: 1200px;
+    margin: auto;
+}
+    /* ############ HEADER - HEADER ############# */
+    .wrapper .header{
+        
+    }
+    .wrapper .header .header_top_taskbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .wrapper .header .header_top_taskbar .header_taskbar{
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .wrapper .header .header_top_taskbar .header_taskbar .active{
+        color: #fce38a;  
+    }
+    .wrapper .header .header_top_taskbar .header_taskbar .active::after{
+        content: "";
+        display: block;
+        height: 3px;
+        margin-top: 5px;
+        background-image: url('/images/About_bottom.png');
+    }
+    /*#######---NAV---########### */
+    .wrapper .header .header_nav{
+        margin-top: 120px;
+        text-align: center;
+    }
+    .wrapper .header .header_nav .nav_top{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 72px;
+        color:white;
+    }
+    .wrapper .header .header_nav .nav_title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 150px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 140px;
+        color:white;
+    }
+    .wrapper .header .header_nav .nav_bottom_line{
+        margin-top: 40px;
+    }
+    .wrapper .header .header_nav .nav_buttom_button .nav_button{
+        height: 40px;
+        width: 160px;
+        margin-top: 40px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: 3px solid white;
+        transition: all .5s ease;
+        background-color : transparent;
+    }
+    .wrapper .header .header_nav .nav_buttom_button .nav_button:hover{
+        color: #001F3F;
+        background-color: #fff;
+    }
+    /* ############ HEADER - FOOTER ############# */
+    .wrapper .header .header_footer{
+        margin-top: 160px;
+        display: flex;
+        justify-content: space-between;
+        height: 143px;
+    }
+
+    .wrapper .header .header_footer .intro_progress img::after{
+        content: '';
+        background-image:url('/images/Rectangle 4 copy.png') ;
+        /* background-size: 70px 3px; */
+    }
+    .wrapper .header .header_footer .footer_progress ul{
+        display: flex;
+        align-items: flex-end;
+        padding-top: 20px;
+    }
+        .wrapper .header .header_footer .footer_progress .number_tag{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .wrapper .header .header_footer .footer_progress .name_tag{
+            font-size: 18px;
+            padding-bottom: 2px;
+            padding-left: 5px;
+        }
+/* ############ Main - FOOTER ############# */
+
+.wrapper .main{
+}
+    .wrapper .main .main_about_us 
+    {   
+        height: 750px;
+    }
+        .wrapper .main .main_about_us .nav_top{
+            margin-top: 90px;
+            font-family: 'Kaushan Script', cursive;
+            font-size: 24px;
+            text-align: center;
+        }
+        .wrapper .main .main_about_us .nav_title{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .wrapper .main .main_about_us .nav_bottom_line{
+            margin-top: 30px;
+            text-align: center;
+        }
+        .wrapper .main .main_about_us .nav_bottom_text{
+            font-size: 15px;
+            color: grey;
+            text-align: center;
+            margin-top: 45px;
+        }
