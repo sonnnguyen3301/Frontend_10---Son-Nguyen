@@ -10,39 +10,37 @@ li{
     font-size: 14px;
     list-style: none;
     font-family: 'Roboto', sans-serif;
-    
 }
 button{
     color: white;
 }
-p{
-    font-size: 16px;
-}
-body{
-    background-image:url('/images/Bird_bg.png');
-    background-repeat: no-repeat;
-    background-size: 100vw 1000px;
-}
+
 .wrapper{
-    width: 1200px;
-    margin: auto;
+    width: 100%;
+}
+.wrapper .banner{
+    background:url('/images/Bird_bg.png');
+    background-size: 100vw 1000px;
 }
     /* ############ HEADER - HEADER ############# */
     .wrapper .header{
-        
+        width: 1200px;
+        margin: auto;
     }
     .wrapper .header .header_top_taskbar{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 30px;
+        
         color: white;
     }
     .wrapper .header .header_top_taskbar .header_taskbar{
         width: 600px;
+        margin-top: 30px;
         display: flex;
         justify-content: space-between;
         cursor: pointer;
+        align-items: center; 
     }
 
     .wrapper .header .header_top_taskbar .header_taskbar .active{
@@ -119,11 +117,16 @@ body{
             padding-bottom: 2px;
             padding-left: 5px;
         }
-/* ############ Main - FOOTER ############# */
+/* ############ Main - ABOUT US ############# */
 
 .wrapper .main{
-    height: 750px;
-}
+    
+}   
+    .wrapper .main .background2 .facts{
+        height: 750px;
+        width: 1200px;
+        margin: auto;
+    }
         .wrapper .main .main_about_us .nav_top{
             margin-top: 90px;
             font-family: 'Kaushan Script', cursive;
@@ -154,7 +157,7 @@ body{
 }   
     .wrapper .main .main_about_us_image .image1{
         background-image: url('/images/Rectangle 6_background_lime_hover.png');  
-        position: relative;  
+        /* position: relative;   */
     }
     .wrapper .main .main_about_us_image .image1 img{
         position: relative;
@@ -163,7 +166,7 @@ body{
     }
     .wrapper .main .main_about_us_image .image1 .User_hover{
         position: absolute;
-        height: 50px;
+        padding-top: 50px;
     }
     .wrapper .main .main_about_us_image .image1 .User_hover .user_logo{
         /* text-align: center; */
@@ -171,3 +174,119 @@ body{
     .wrapper .main .main_about_us_image .image1 .User_hover .text{
 
     }
+/* ############ Main - FACTS ############# */
+.wrapper .main .main_facts{
+    background: url('/images/background_full_size_number.png');
+}
+    .wrapper .main .main_facts .facts{
+        margin: auto;
+        display: flex;
+        width: 1200px;
+        height: 270px;
+    }
+        .wrapper .main .main_facts .facts > li{
+            width: 240px;
+            border-left: 3px solid #b5eae0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .wrapper .main .main_facts .facts .number{
+            font-size: 72px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+        .wrapper .main .main_facts .facts .texts{
+            font-size: 14px;
+            color: white;
+            text-align: center;
+        }
+        .wrapper .main .main_facts .facts .last_box{
+            border-right: 3px solid #b5eae0;
+        }
+/* ############ Main - SERVICE ############# */
+.wrapper .main .main_service{
+    height: 650px;
+}
+    .wrapper .main .main_service .main_work_with .nav_top{
+        font-family: 'Kaushan Script';
+        font-size: 24px;
+        text-align: center;
+    }
+    .wrapper .main .main_service .main_work_with .nav_title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .wrapper .main .main_service .main_work_with .nav_bottom_line{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .wrapper .main .main_service .main_work_with .nav_bottom_line{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .wrapper .main .main_service .main_service_text{
+        width: 1200px;
+        margin: auto;
+        margin-top: 65px;
+        display: flex;
+        flex-flow: wrap;
+        border-bottom: 3px solid #e5e5e5;
+    }
+    .wrapper .main .main_service .new_border{
+        border-bottom: none;
+    }
+        .wrapper .main .main_service .main_service_text .main_services_tt{
+            margin: auto;
+            height: 150px;
+            width: 350px;
+            display: flex;       
+        }
+        .wrapper .main .main_service .main_service_text .main_services_tt img{
+            width: 35px;
+            height: 35px;
+        }
+        .wrapper .main .main_service .main_service_text .main_services_tt .all_service {
+            margin-left: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+        .wrapper .main .main_service .main_service_text .main_services_tt .all_service .services_title{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+        .wrapper .main .main_service .main_service_text .main_services_tt .all_service .services_inner{
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            color: #999999;
+        }
+/* ############ Main - FEATURE ############# */
+.wrapper .main .feature{
+    background: url('/images/Background_tablet_phone.png');
+    height: 850px;
+}
+    .wrapper .main .feature .main_feature{}
+        .wrapper .main .feature .main_feature .nav_top{
+            /* margin-top: 90px; */
+            font-family: 'Kaushan Script', cursive;
+            font-size: 24px;
+            text-align: center;
+        }
+        .wrapper .main .feature .main_feature .nav_title{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .wrapper .main .feature .main_feature .nav_bottom_line{
+            margin-top: 30px;
+            text-align: center;
+        }
+/* ############ Main - FOOTER ############# */
