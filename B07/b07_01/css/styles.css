@@ -14,7 +14,14 @@ li{
 button{
     color: white;
 }
-
+div{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
 .wrapper{
     width: 100%;
 }
@@ -31,7 +38,6 @@ button{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
         color: white;
     }
     .wrapper .header .header_top_taskbar .header_taskbar{
@@ -40,7 +46,6 @@ button{
         display: flex;
         justify-content: space-between;
         cursor: pointer;
-        align-items: center; 
     }
 
     .wrapper .header .header_top_taskbar .header_taskbar .active{
@@ -100,7 +105,6 @@ button{
     .wrapper .header .header_footer .intro_progress img::after{
         content: '';
         background-image:url('/images/Rectangle 4 copy.png') ;
-        /* background-size: 70px 3px; */
     }
     .wrapper .header .header_footer .footer_progress ul{
         display: flex;
@@ -146,7 +150,7 @@ button{
         }
         .wrapper .main .main_about_us .nav_bottom_text{
             font-size: 15px;
-            color: grey;
+            color: #999999;
             text-align: center;
             margin-top: 45px;
         }
@@ -209,7 +213,15 @@ button{
 /* ############ Main - SERVICE ############# */
 .wrapper .main .main_service{
     height: 650px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+    .wrapper .main .main_service .main_work_with{
+        padding-top: 90px;
+    }
     .wrapper .main .main_service .main_work_with .nav_top{
         font-family: 'Kaushan Script';
         font-size: 24px;
@@ -269,11 +281,19 @@ button{
 /* ############ Main - FEATURE ############# */
 .wrapper .main .feature{
     background: url('/images/Background_tablet_phone.png');
-    height: 850px;
+    background-repeat: no-repeat;
+    background-size:100vw 850px;
+    height: 900px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-    .wrapper .main .feature .main_feature{}
+    .wrapper .main .feature .main_feature{
+        padding-top: 40px;
+    }
         .wrapper .main .feature .main_feature .nav_top{
-            /* margin-top: 90px; */
             font-family: 'Kaushan Script', cursive;
             font-size: 24px;
             text-align: center;
@@ -289,4 +309,217 @@ button{
             margin-top: 30px;
             text-align: center;
         }
-/* ############ Main - FOOTER ############# */
+    .wrapper .main .feature .main_feature_image{
+        padding-top: 50px;
+        position: relative;
+    }
+    .wrapper .main .feature .main_feature_image .cellphone{
+        position: absolute;
+        top: 240px;
+        right: -150px;
+        height: 400px;
+    }
+    
+/* ############ Main - SERVICES2 ############# */
+.wrapper .main .main_service2{
+    height: 850px;
+}
+.wrapper .main .main_service2 .main_what_we_do{
+    padding-top: 40px;
+}
+    .wrapper .main .main_service2 .main_what_we_do .nav_top{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 24px;
+        text-align: center;
+    }
+        .wrapper .main .main_service2 .main_what_we_do .nav_title{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .wrapper .main .main_service2 .main_what_we_do .nav_bottom_line{
+            margin-top: 30px;
+            text-align: center;
+        }
+        .wrapper .main .main_service2 .main_what_we_do .nav_bottom_text{
+            font-size: 15px;
+            color: #999999;
+            text-align: center;
+            margin-top: 45px;
+        }
+    .wrapper .main .main_service2 .main_service2_inner{
+        padding-top: 90px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+    }
+        .wrapper .main .main_service2 .main_service2_inner .inner_text{
+            height: 380px;
+            width: 600px;
+        }
+            .wrapper .main .main_service2 .main_service2_inner .inner_text .box_slide_text{
+                height: 240px;
+            }
+            .wrapper .main .main_service2 .main_service2_inner .inner_text .box_slide_no_text{
+                height: 60px;
+            }
+            .wrapper .main .main_service2 .main_service2_inner .inner_text .slide_last{
+                margin-top: 15px;
+            }
+            .wrapper .main .main_service2 .main_service2_inner .inner_text .box_slide_text .box_slide_title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border: 2px solid #e5e5e5;
+            }
+                .wrapper .main .main_service2 .main_service2_inner .inner_text .box_slide_text .box_slide_title > img{
+                    height: 12px;
+                    width: 32px;
+                    padding-right: 10px;
+                }
+            .wrapper .main .main_service2 .main_service2_inner .inner_text .box_slide_text .photography{
+                height: 60px;
+                display: flex;
+                align-items: center;   
+            }
+                .wrapper .main .main_service2 .main_service2_inner .inner_text .box_slide_text .photography > img{
+                    padding-left: 10px;
+                }
+                .wrapper .main .main_service2 .main_service2_inner .inner_text .box_slide_text .photography > a{
+                    padding-left: 10px;
+                }
+            .wrapper .main .main_service2 .main_service2_inner .inner_text .box_slide_text .text_info{
+                margin: 10px;
+                color: #999999;
+            }
+            .wrapper .main .main_service2 .main_service2_inner .inner_text .box_slide_text .inner_slide_info{
+                display: flex;
+            }
+            .wrapper .main .main_service2 .main_service2_inner .inner_text .box_slide_text .inner_slide_info > img{
+                padding-top: 10px;
+                padding-right: 15px;
+            }
+/* ############ Main - QUOTE ############# */
+.wrapper .main .main_quote{
+    background: url("/images/background_grey.png");
+    height: 290px;
+}
+    .wrapper .main .main_quote .quote_content{
+        margin: auto;
+        width: 1200px;
+        height: 290px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .wrapper .main .main_quote .quote_content .arrow{
+            width: 100px;
+            height: 290px;
+            display: flex;
+        }
+        .wrapper .main .main_quote .quote_content .arrow > img{
+            margin: auto;
+        }
+        .wrapper .main .main_quote .quote_content .img_speech{
+            border: 3px solid #95e1d3;
+            width: 120px;
+        }
+        .wrapper .main .main_quote .quote_content .img_speech .border_img{
+           height: 120px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .wrapper .main .main_quote .quote_content .quote_content_text{
+            padding-left: 30px;
+            width: 770px;
+            font-family: 'Roboto', sans-serif;
+            color:#999999;
+            font-style: italic;
+        }
+        .wrapper .main .main_quote .quote_content .footer{
+            display: flex;
+            align-items: center;
+        }
+        .wrapper .main .main_quote .quote_content .footer > img{
+            width: 45px;
+            height: 3px;
+        }
+        .wrapper .main .main_quote .quote_content .footer .creator{
+            font-family: 'Kaushan Script', cursive;
+            font-style: normal;
+            font-size: 24px;
+            padding-left: 15px;
+            color: black;
+        }
+/* ############ Main - QUOTE ############# */
+.wrapper .main .main_team{
+    margin: auto;
+    height: 1050px;
+    width: 1200px;
+    padding-top: 90px;
+}
+.wrapper .main .main_team .main_who_we_are .nav_top{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    text-align: center;
+}
+    .wrapper .main .main_team .main_who_we_are .nav_title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .wrapper .main .main_team .main_who_we_are .nav_bottom_line{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .wrapper .main .main_team .main_who_we_are .nav_bottom_text{
+        font-size: 15px;
+        color: #999999;
+        text-align: center;
+        margin-top: 45px;
+    }
+    /* ############ Main - ABOUT us ############# */
+.wrapper .main .main_team .main_who_image{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}   
+    .wrapper .main .main_team .main_who_image .image1{
+        background: url('/images/Rectangle 6_background_lime_hover.png');  
+        background-size: 380px 470px;
+        /* position: relative;   */
+    }
+    .wrapper .main .main_team .main_who_image .image1 .creator_info{
+        background: none;
+    }
+    .wrapper .main .main_team .main_who_image .image1 img{
+        position: relative;
+        top: -10px;
+        left: -10px;
+    }
+    .wrapper .main .main_team .main_who_image .image1 .User_hover{
+        position: absolute;
+        padding-top: 50px;
+    }
+    .wrapper .main .main_team .main_who_image .image1 .User_hover .user_logo{
+        /* text-align: center; */
+    }
+    .wrapper .main .main_team .main_who_image .image1 .User_hover .text{
+
+    }
+.wrapper .main .main_logo {
+    background-color: #f8f8f8;
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+    .wrapper .main .main_logo .all_companion{
+        margin: auto;
+        width: 1200px;
+    }
