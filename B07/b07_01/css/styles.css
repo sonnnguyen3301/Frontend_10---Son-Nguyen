@@ -16,7 +16,7 @@ button{
 }
 div{
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 }
 a{
     font-family: 'Montserrat', sans-serif;
@@ -25,13 +25,17 @@ a{
 .wrapper{
     width: 100%;
 }
+
+.container{
+    max-width: 1200px;
+}
+
 .wrapper .banner{
-    background:url('/images/Bird_bg.png');
+    background:url('../images/Bird_bg.png');
     background-size: 100vw 1000px;
 }
     /* ############ HEADER - HEADER ############# */
     .wrapper .header{
-        width: 1200px;
         margin: auto;
     }
     .wrapper .header .header_top_taskbar{
@@ -56,7 +60,7 @@ a{
         display: block;
         height: 3px;
         margin-top: 5px;
-        background-image: url('/images/About_bottom.png');
+        background-image: url('../images/About_bottom.png');
     }
     /*#######---NAV---########### */
     .wrapper .header .header_nav{
@@ -104,7 +108,7 @@ a{
 
     .wrapper .header .header_footer .intro_progress img::after{
         content: '';
-        background-image:url('/images/Rectangle 4 copy.png') ;
+        background-image:url('../images/Rectangle 4 copy.png') ;
     }
     .wrapper .header .header_footer .footer_progress ul{
         display: flex;
@@ -128,7 +132,6 @@ a{
 }   
     .wrapper .main .background2 .facts{
         height: 750px;
-        width: 1200px;
         margin: auto;
     }
         .wrapper .main .main_about_us .nav_top{
@@ -160,7 +163,7 @@ a{
     margin-top: 100px;
 }   
     .wrapper .main .main_about_us_image .image1{
-        background-image: url('/images/Rectangle 6_background_lime_hover.png');  
+        background-image: url('../images/Rectangle 6_background_lime_hover.png');  
         /* position: relative;   */
     }
     .wrapper .main .main_about_us_image .image1 img{
@@ -180,12 +183,11 @@ a{
     }
 /* ############ Main - FACTS ############# */
 .wrapper .main .main_facts{
-    background: url('/images/background_full_size_number.png');
+    background: url('../images/background_full_size_number.png');
 }
     .wrapper .main .main_facts .facts{
         margin: auto;
         display: flex;
-        width: 1200px;
         height: 270px;
     }
         .wrapper .main .main_facts .facts > li{
@@ -243,18 +245,15 @@ a{
         text-align: center;
     }
     .wrapper .main .main_service .main_service_text{
-        width: 1200px;
-        margin: auto;
         margin-top: 65px;
         display: flex;
-        flex-flow: wrap;
         border-bottom: 3px solid #e5e5e5;
     }
     .wrapper .main .main_service .new_border{
         border-bottom: none;
     }
         .wrapper .main .main_service .main_service_text .main_services_tt{
-            margin: auto;
+            padding: 10px;
             height: 150px;
             width: 350px;
             display: flex;       
@@ -280,7 +279,7 @@ a{
         }
 /* ############ Main - FEATURE ############# */
 .wrapper .main .feature{
-    background: url('/images/Background_tablet_phone.png');
+    background: url('../images/Background_tablet_phone.png');
     background-repeat: no-repeat;
     background-size:100vw 850px;
     height: 900px;
@@ -354,7 +353,6 @@ a{
         margin: auto;
         display: flex;
         justify-content: space-between;
-        width: 1200px;
     }
         .wrapper .main .main_service2 .main_service2_inner .inner_text{
             height: 380px;
@@ -404,12 +402,11 @@ a{
             }
 /* ############ Main - QUOTE ############# */
 .wrapper .main .main_quote{
-    background: url("/images/background_grey.png");
+    background: url("../images/background_grey.png");
     height: 290px;
 }
     .wrapper .main .main_quote .quote_content{
         margin: auto;
-        width: 1200px;
         height: 290px;
         display: flex;
         align-items: center;
@@ -455,11 +452,10 @@ a{
             padding-left: 15px;
             color: black;
         }
-/* ############ Main - QUOTE ############# */
+/* ############ Main - Team ############# */
 .wrapper .main .main_team{
     margin: auto;
     height: 1050px;
-    width: 1200px;
     padding-top: 90px;
 }
 .wrapper .main .main_team .main_who_we_are .nav_top{
@@ -491,9 +487,8 @@ a{
     margin-top: 100px;
 }   
     .wrapper .main .main_team .main_who_image .image1{
-        background: url('/images/Rectangle 6_background_lime_hover.png');  
+        background: url('../images/Rectangle 6_background_lime_hover.png');  
         background-size: 380px 470px;
-        /* position: relative;   */
     }
     .wrapper .main .main_team .main_who_image .image1 .creator_info{
         background: none;
@@ -513,6 +508,7 @@ a{
     .wrapper .main .main_team .main_who_image .image1 .User_hover .text{
 
     }
+    /* ############ Main - LOGO ############# */
 .wrapper .main .main_logo {
     background-color: #f8f8f8;
     height: 250px;
@@ -521,5 +517,213 @@ a{
 }
     .wrapper .main .main_logo .all_companion{
         margin: auto;
-        width: 1200px;
     }
+    /* ############ Main - WORK ############# */
+.wrapper .main .main_work{
+
+}
+.wrapper .main .main_work .main_what_we_do{
+    padding-top: 60px;
+}
+    .wrapper .main .main_work .main_what_we_do .nav_top{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 24px;
+        text-align: center;
+    }
+        .wrapper .main .main_work .main_what_we_do .nav_title{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .wrapper .main .main_work .main_what_we_do .nav_bottom_line{
+            margin-top: 30px;
+            text-align: center;
+        }
+        .wrapper .main .main_work .main_what_we_do .nav_bottom_text{
+            font-size: 15px;
+            color: #999999;
+            text-align: center;
+            margin-top: 45px;
+        }
+.wrapper .main .main_work .main_work_image{
+    max-height: 800px;
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+}
+    .wrapper .main .main_work .main_work_image .image_half{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+ /* ############ Main - TESTIMONIAL ############# */
+.wrapper .main .main_testimonial{
+    height: 300px;
+}
+    .wrapper .main .main_testimonial .quote_content{
+        margin: auto;
+        height: 290px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .wrapper .main .main_testimonial .quote_content .arrow{
+            width: 100px;
+            height: 290px;
+            display: flex;
+        }
+        .wrapper .main .main_testimonial .quote_content .arrow > img{
+            margin: auto;
+        }
+        .wrapper .main .main_testimonial .quote_content .img_speech{
+            width: 120px;
+        }
+        .wrapper .main .main_testimonial .quote_content .img_speech .border_img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrapper .main .main_testimonial .quote_content .img_speech .border_img img{
+            height: 160px;
+        }
+        .wrapper .main .main_testimonial .quote_content .quote_content_text{
+            padding-left: 30px;
+            width: 770px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            color:#999999;
+            font-style: italic;
+        }
+        .wrapper .main .main_testimonial .quote_content .footer{
+            display: flex;
+            align-items: center;
+        }
+        .wrapper .main .main_testimonial .quote_content .footer > img{
+            width: 45px;
+            height: 3px;
+        }
+        .wrapper .main .main_testimonial .quote_content .footer .creator{
+            font-family: 'Kaushan Script', cursive;
+            font-style: normal;
+            font-size: 24px;
+            padding-left: 15px;
+            color: black;
+        }
+ /* ############ Main - PEOPLE SAY ############# */
+.wrapper .main .main_people_say .background_moutain{
+    position: absolute;
+    opacity: 0.2;
+}
+    .wrapper .main .main_people_say .background_moutain img{
+        width: 100vw;
+        height: 850px;
+    }
+.wrapper .main .main_people_say{
+    height: 850px;
+    position: relative;
+}
+.wrapper .main .main_people_say .main_happy_client{
+    padding-top: 80px;
+}
+    .wrapper .main .main_people_say .main_happy_client .nav_top{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 24px;
+        text-align: center;
+    }
+        .wrapper .main .main_people_say .main_happy_client .nav_title{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .wrapper .main .main_people_say .main_happy_client .nav_bottom_line{
+            margin-top: 30px;
+            text-align: center;
+        }
+        .wrapper .main .main_people_say .main_happy_client .nav_bottom_text{
+            font-size: 15px;
+            color: #999999;
+            text-align: center;
+            margin-top: 45px;
+        }
+    .wrapper .main .main_people_say .main_info_client{
+        padding-top: 100px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-height: 600px;
+    }
+        .wrapper .main .main_people_say .box_client_info{
+            display: flex;
+            max-width: 600px;
+            height: 200px;
+            
+        }
+        .wrapper .main .main_people_say .box_client_info .client_info{
+            display: flex;
+            padding-left: 15px;
+            flex-direction: column;
+        }
+        .wrapper .main .main_people_say .box_client_info .client_info :first-child{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            padding-bottom: 10px;
+        }
+        .wrapper .main .main_people_say .box_client_info .client_info :nth-child(2){
+            font-size: 15px;
+            font-style: italic;
+            padding-bottom: 10px;
+        }
+        .wrapper .main .main_people_say .box_client_info .client_info :nth-child(3){
+            padding-top: 10px;
+        }
+        .wrapper .main .main_people_say .box_client_info .client_info :nth-child(4){
+            padding-top: 10px;
+            font-size: 15px;
+            color: #999999;
+        }
+ /* ############ Main - BLOG ############# */
+ .wrapper .main .main_blog{
+    height: 800px;
+}
+.wrapper .main .main_blog .main_stories{
+    padding-top: 80px;
+}
+    .wrapper .main .main_blog .main_stories .nav_top{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 24px;
+        text-align: center;
+    }
+        .wrapper .main .main_blog .main_stories .nav_title{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .wrapper .main .main_blog .main_stories .nav_bottom_line{
+            margin-top: 30px;
+            text-align: center;
+        }
+.wrapper .main .main_blog .all_blog{
+    padding-top: 80px;
+}
+    .wrapper .main .main_blog .all_blog .box_blog{
+        max-height: 500px;
+    }
+        .wrapper .main .main_blog .all_blog .box_blog .image_blog{
+            position: relative;
+        }
+        .wrapper .main .main_blog .all_blog .box_blog .image_blog .date_tag{
+            position: absolute;
+            background-color: #95e1d3;
+            width: 40px;
+            height: 50px;
+            top: -50px;
+            left: -10px;
+        }
