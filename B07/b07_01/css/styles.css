@@ -55,6 +55,10 @@ p{
         justify-content: space-between;
         cursor: pointer;
     }
+    .wrapper .header .header_top_taskbar .header_taskbar> li{
+        text-align: center;
+        line-height: 25px;
+    }
 
     .wrapper .header .header_top_taskbar .header_taskbar .active{
         color: #fce38a;  
@@ -66,6 +70,17 @@ p{
         margin-top: 5px;
         background-image: url('../images/About_bottom.png');
     }
+    .wrapper .header .header_top_taskbar .header_taskbar .hover_active:hover{
+        color: #fce38a;  
+    }
+    .wrapper .header .header_top_taskbar .header_taskbar .hover_active:hover:after{
+        content: "";
+        display: block;
+        height: 3px;
+        margin-top: 5px;
+        background-image: url('../images/About_bottom.png');
+    }
+    
     /*#######---NAV---########### */
     .wrapper .header .header_nav{
         margin-top: 120px;
@@ -164,26 +179,68 @@ p{
 .wrapper .main .main_about_us_image{
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    padding-top: 100px;
 }   
-    .wrapper .main .main_about_us_image .image1{
-        background-image: url('../images/Rectangle 6_background_lime_hover.png');  
-        /* position: relative;   */
-    }
-    .wrapper .main .main_about_us_image .image1 img{
+    .wrapper .main .main_about_us_image .box_image{
+        width: 380px;
+        height: 250px;
+        transition: 1s;
         position: relative;
-        top: -10px;
-        left: -10px;
+        background-repeat: no-repeat;
     }
-    .wrapper .main .main_about_us_image .image1 .User_hover{
+    .wrapper .main .main_about_us_image .box_image:hover{
+        width: 384px;
+        height: 254px;
+        background: none;
+        background-color: #95e1d3;
+    }
+    .wrapper .main .main_about_us_image .box_image1{
+        background: url('../images/KEYBOARD.png');
+    }
+    .wrapper .main .main_about_us_image .box_image2{
+        background: url('../images/Rectangle 6_desk.png');
+    }
+    .wrapper .main .main_about_us_image .box_image3{
+        background: url('../images/Rectangle 6_desk_2.png');
+    }
+    
+    .wrapper .main .main_about_us_image .image{
+        width: 380px;
+        height: 250px;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         position: absolute;
-        padding-top: 50px;
+        top: -6px;
+        left: -6px;
+        opacity: 0;
     }
-    .wrapper .main .main_about_us_image .image1 .User_hover .user_logo{
-        /* text-align: center; */
+    .wrapper .main .main_about_us_image .image .text{
+        color: white;
     }
-    .wrapper .main .main_about_us_image .image1 .User_hover .text{
-
+    .wrapper .main .main_about_us_image .image1{
+        background: url("../images/Background_orange.png");
+        background-repeat: no-repeat;
+    }
+    .wrapper .main .main_about_us_image .image1{
+        background: url("../images/Background_orange.png");
+        background-repeat: no-repeat;
+    }
+    .wrapper .main .main_about_us_image .image2{
+        background: url("../images/desk_orange.png");
+        background-repeat: no-repeat;
+    }
+    .wrapper .main .main_about_us_image .image3{
+        background: url("../images/Lab_convert.png");
+        background-repeat: no-repeat;
+    }
+    .wrapper .main .main_about_us_image .image:hover{
+        width: 388px;
+        height: 258px;
+        transition: 1s ease;
+        opacity: 1;
     }
 /* ############ Main - FACTS ############# */
 .wrapper .main .main_facts{
@@ -201,6 +258,10 @@ p{
             display: flex;
             flex-direction: column;
             justify-content: center;
+        }
+        .wrapper .main .main_facts .facts > li:hover{
+            transform: scale(1.2);
+            border: none;
         }
         .wrapper .main .main_facts .facts .number{
             font-size: 72px;
@@ -487,30 +548,115 @@ p{
     /* ############ Main - ABOUT us ############# */
 .wrapper .main .main_team .main_who_image{
     display: flex;
+    list-style: none;
     justify-content: space-between;
-    margin-top: 100px;
-}   
-    .wrapper .main .main_team .main_who_image .image1{
-        background: url('../images/Rectangle 6_background_lime_hover.png');  
-        background-size: 380px 470px;
-    }
-    .wrapper .main .main_team .main_who_image .image1 .creator_info{
-        background: none;
-    }
-    .wrapper .main .main_team .main_who_image .image1 img{
+    align-items: center;
+    padding-top: 80px;
+}
+    .wrapper .main .main_team .main_who_image .box_image_team{
+        width: 380px;
+        height: 470px;
+        transition: 1s;
         position: relative;
-        top: -10px;
-        left: -10px;
+        background-repeat: no-repeat;
     }
-    .wrapper .main .main_team .main_who_image .image1 .User_hover{
-        position: absolute;
-        padding-top: 50px;
+    .wrapper .main .main_team .main_who_image .box_image_team:hover{
+        width: 382px;
+        height: 472px;
+        background: none;
+        background-color: #95e1d3;
     }
-    .wrapper .main .main_team .main_who_image .image1 .User_hover .user_logo{
-        /* text-align: center; */
-    }
-    .wrapper .main .main_team .main_who_image .image1 .User_hover .text{
 
+    .wrapper .main .main_team .main_who_image .box_image1{
+        background: url('../images/Matthew_dix_raw.png');
+    }
+    .wrapper .main .main_team .main_who_image .box_image2{
+        background: url('../images/christopher campbell.png');
+    }
+    .wrapper .main .main_team .main_who_image .box_image3{
+        background: url('../images/Michael Firtic.png');
+    }
+    
+    .wrapper .main .main_team .main_who_image .image{
+        width: 380px;
+        height: 470px;
+        transition: 1s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        opacity: 0;
+    }
+    .wrapper .main .main_team .main_who_image .image :first-child{
+       background: url('../images/facebook_pink.png'),#fce38a;
+       background-repeat: no-repeat;
+       background-position: 50%;
+    }
+    .wrapper .main .main_team .main_who_image .image :first-child:hover{
+        background: url('../images/facebook_logo.png'),#f38181;
+        background-repeat: no-repeat;
+        background-position: 50%;
+     }
+    .wrapper .main .main_team .main_who_image .image :nth-child(2){
+        background: url('../images/twitter_logo.png'),#fce38a;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+    .wrapper .main .main_team .main_who_image .image :nth-child(2):hover{
+        background: url('../images/twitter_white.png'),#f38181;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+    .wrapper .main .main_team .main_who_image .image :nth-child(3){
+        background: url('../images/pinterest_logo.png'),#fce38a;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+    .wrapper .main .main_team .main_who_image .image :nth-child(3):hover{
+        background: url('../images/pinterest_white.png'),#f38181;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+    .wrapper .main .main_team .main_who_image .image :nth-child(4){
+        background: url('../images/instagram_logo.png'),#fce38a;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+    .wrapper .main .main_team .main_who_image .image :nth-child(4):hover{
+        background: url('../images/instagram_white.png'),#f38181;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+     
+    .wrapper .main .main_team .main_who_image .image > div{
+        width: 55px;
+        height: 55px;
+        background-color: #fce38a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #f9bd87;
+    }
+    .wrapper .main .main_team .main_who_image .image1{
+        background: url("../images/matthew dix.png");
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    .wrapper .main .main_team .main_who_image .image2{
+        background: url("../images/christopher_campbell_orange.png");
+        background-repeat: no-repeat;
+    }
+    .wrapper .main .main_team .main_who_image .image3{
+        background: url("../images/michael_fertig_orange.png");
+        background-repeat: no-repeat;
+    }
+    .wrapper .main .main_team .main_who_image .image:hover{
+        width: 388px;
+        height: 478px;
+        transition: 1s ease;
+        opacity: 1;
     }
     /* ############ Main - LOGO ############# */
 .wrapper .main .main_logo {
@@ -733,5 +879,4 @@ p{
             left: -10px;
             text-align: center;
             line-height: 65px;
-            
         }
