@@ -6,5 +6,5 @@ for (let i = 0; i <= dis; i++) {
         document.write(j + string)
     }
     document.write("<br />")
-    // text += cars[i] + "<br>";    
+   
   }
