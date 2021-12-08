@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.box {
+    margin: 10px;
+    float: left;
+    background-color: #d9f498;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
