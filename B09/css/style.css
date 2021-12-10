@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box{
+    margin:200px auto;
+    width: 600px;
+    height: 200px;
+    background-color: aquamarine;
+    text-align: center;
+    line-height: 200px;
+}
