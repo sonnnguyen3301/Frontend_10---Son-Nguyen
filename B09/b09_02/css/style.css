@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(231, 224, 224);
+}
+
+.box{
+    width: 50%; 
+    height: 50%;
+    margin: 100px auto;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+    .box h3{
+        width: 50%; 
+        margin:65px 0px 15px 35px;
+        font-size: 23px;
+        font-weight: bold;
+    }
+    .box label{
+        font-weight: bold;
+        margin:65px 0px 5px 35px;
+        font-size: 13px;
+    }
+    .box input[type=file], select {
+        width: 70%;
+        padding: 12px 20px;
+        margin: 5px 0px 30px 35px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: white;
+    }
+    .box img[type=img] {
+        display: block;
+
+        height: 60%;
+        width: 60%;
+        padding: 12px 20px;
+        margin: auto;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }

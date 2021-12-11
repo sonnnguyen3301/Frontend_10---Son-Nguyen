@@ -1,0 +1,17 @@
+chuong-tu-di_face: Left = 30
+		   Right= 25 
+
+girl.jpg	 : Left = 45
+		   Right= 55 
+
+girl_2.jpg.	 : Left = 30
+		   Right= 35 
+
+girl_face_asian. : Left = 60
+		   Right= 58 
+
+link-ka.	 : Left = 35
+		   Right= 65 
+
+kid.jpg.	 : Left = 50
+		   Right= 60 
