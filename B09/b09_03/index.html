@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    <script src="./js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Full Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="fullname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="phone">Phone</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="phone" name="phone" placeholder="Your number..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="job">Job</label>
+                </div>
+                <div class="col-75">
+                    <select id="job" name="job">
+                        <option value="Student">Student</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Teacher">Teacher</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <button type="button" id="Delete">Delete local storage</button>
+                <button type="button"  id="Submit">Send contact</button>
+            </div>
+        </form>
+      </div>
+</body>
+<script src="./js/main.js"></script>
+</html>
