@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container-xxl my-3">
+        <!-- TITLE : START -->
+        <h1>Project - Todo List</h1>
+        <!-- TITLE : END -->
+
+        <div class="card border mt-3">
+            <div class="card-body">
+                <!-- CONTROL : START -->
+                <div class="row">
+                    <div class="col-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter keyword ..." />
+                            <button class="btn btn-outline-info" type="button" id="btn-search">Go!</button>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center align-items-center">
+                        <div class="btn-group me-3">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2"
+                                data-mdb-toggle="dropdown" aria-expanded="false">
+                                Sort by
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><button class="dropdown-item" type="button">Name - ASC</button></li>
+                                <li><button class="dropdown-item" type="button">Name - DESC</button></li>
+                                <li><button class="dropdown-item" type="button">Level - ASC</button></li>
+                                <li><button class="dropdown-item" type="button">Level - DESC</button></li>
+                            </ul>
+                        </div>
+                        <h4 class="mb-0"><span class="badge bg-success">NAME - ASC</span></h2>
+                    </div>
+                    <div class="col-5">
+                        <button id="add-task" type="button" class="btn btn-info btn-block btn-info">Add Task</button>
+                    </div>
+                </div>
+                <!-- CONTROL : END -->
+
+                <!-- FORM : START -->
+                <div class="row mt-3 d-none" id="area-form">
+                    <div class="col-sm-5 offset-sm-7">
+                        <div class="d-flex">
+                            <input type="text" id="input-name" placeholder="Task Name" class="form-control me-1" />
+                            <select id="input-level" class="form-select me-1" style="width: unset">
+                                <option value="0">Small</option>
+                                <option value="1">Medium</option>
+                                <option value="2">High</option>
+                            </select>
+                            <button id="btn-submit" type="button" class="btn btn-primary btn-sm me-1" data-mdb-ripple-unbound="true">Submit</button>
+                            <button id="btn-cancel" type="button" class="btn btn-danger btn-sm" data-mdb-ripple-unbound="true">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FORM : END -->
+            </div>
+        </div>
+
+        <!-- LIST: START -->
+        <div class="card border mt-3">
+            <div class="card-header bg-success text-white">List Task</div>
+            <div class="card-body">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Task</th>
+                            <th scope="col">Level</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="area-list-task">
+                        <!-- <tr>
+                            <td>1</th>
+                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, dolore.</td>
+                            <td><span class="badge bg-danger">High</span></td>
+                            <td>
+                                <button class="btn btn-warning">Edit</button>
+                                <button id="btn-delete" class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</th>
+                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, dolore.</td>
+                            <td><span class="badge bg-dark">Small</span></td>
+                            <td>
+                                <button class="btn btn-warning">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</th>
+                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, dolore.</td>
+                            <td><span class="badge bg-info">Medium</span></td>
+                            <td>
+                                <button class="btn btn-warning">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- LIST: END -->
+    </div>
+    <script src="./js/default.js"></script>
+    <script src="./js/function.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
