@@ -4,6 +4,8 @@ $(document).ready(function () {
 
     $(btnAddTask).click(function(){
         $(this).toggleClass('btn-info');
+        // $(this).text("Close");
+        $(this).text(($(this).text() == 'Add Task') ? 'Close' : 'Add Task').fadeIn();
         $("#area-form").toggleClass('d-none');
         $(this).toggleClass('btn-danger');
     });
@@ -22,6 +24,7 @@ $(document).ready(function () {
         $(btnAddTask).toggleClass('btn-info');
         $("#area-form").toggleClass('d-none');
         $(btnAddTask).toggleClass('btn-danger');
+        $(this).text("Add");
     });
 });
 
