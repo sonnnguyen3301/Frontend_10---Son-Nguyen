@@ -29,6 +29,23 @@ $(document).ready(function () {
             }   
         }
     });
+    // ##### BUTTON SORT BUTTON ######
+    $(sortNameASC).click(function(){
+        load_task(SortAscByName());
+        sortName.text(sortNameASC.text());
+    });
+    $(sortNameDESC).click(function(){
+        load_task(SortDescByName());
+        sortName.text(sortNameDESC.text());
+    });
+    $(sortLevelASC).click(function(){
+        load_task(SortAscByLevel());
+        sortName.text(sortLevelASC.text());
+    });
+    $(sortLevelDESC).click(function(){
+        load_task(SortDescByLevel());
+        sortName.text(sortLevelDESC.text());
+    });
 
     // ##### BUTTON ADD TASK ######
     $(btnAddTask).click(function(){

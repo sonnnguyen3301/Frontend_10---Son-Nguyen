@@ -125,7 +125,7 @@ let ListSearchTaskByText = (text)=>{
     return searchList
 }   
 
-// ##### SEARCH TASK - TEXT ######
+// ##### SEARCH HIGHLIGHT - TEXT ######
 
 let MarkHightLightText = (text)=>{
     var searchList  = [];
@@ -135,3 +135,80 @@ let MarkHightLightText = (text)=>{
     return searchList
 }   
 
+// ##### SORT ASC vs DESC - NAME ######
+
+let SortAscByName = ()=>{
+    let sortList  = [];
+    let NameListSorted = [];
+    TODOLIST.forEach((element) => {
+      sortList.push(element.taskName);
+    });
+    sortList.sort();
+    sortList.forEach((element) =>{
+        for(let i = 0;i < TODOLIST.length; i++){
+            if(element == TODOLIST[i].taskName){
+                NameListSorted.push(TODOLIST[i]);
+                break;
+            }
+        }
+    })
+    return NameListSorted;
+} 
+
+let SortDescByName = ()=>{
+    let sortList  = [];
+    let NameListSorted = [];
+    TODOLIST.forEach((element) => {
+      sortList.push(element.taskName);
+    });
+    sortList.sort();
+    sortList.reverse();
+    sortList.forEach((element) =>{
+        for(let i = 0;i < TODOLIST.length; i++){
+            if(element == TODOLIST[i].taskName){
+                NameListSorted.push(TODOLIST[i]);
+                break;
+            }
+        }
+    })
+    return NameListSorted;
+} 
+
+// ##### SORT ASC vs DESC - LEVEL ######
+
+let SortAscByLevel = ()=>{
+    let sortList  = [];
+    let LevelListSorted = [];
+    TODOLIST.forEach((element) => {
+      sortList.push(element.level);
+    });
+    sortList.sort();
+    sortList.forEach((element) =>{
+        for(let i = 0;i < TODOLIST.length; i++){
+            if(element == TODOLIST[i].level){
+                LevelListSorted.push(TODOLIST[i]);
+                break;
+            }
+        }
+    })
+    return LevelListSorted;
+} 
+
+let SortDescByLevel = ()=>{
+    let sortList  = [];
+    let LevelListSorted = [];
+    TODOLIST.forEach((element) => {
+      sortList.push(element.level);
+    });
+    sortList.sort();
+    sortList.reverse();
+    sortList.forEach((element) =>{
+        for(let i = 0;i < TODOLIST.length; i++){
+            if(element == TODOLIST[i].level){
+                LevelListSorted.push(TODOLIST[i]);
+                break;
+            }
+        }
+    })
+    return LevelListSorted;
+} 

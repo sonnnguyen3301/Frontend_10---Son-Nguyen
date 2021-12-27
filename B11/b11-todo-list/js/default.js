@@ -16,6 +16,12 @@ var btnSearch           = $("#btn-search");
 var inputSearch         = $(".form-control");
 var markName            = $(".task_name");
 
+var sortNameASC         = $("#name_asc");
+var sortNameDESC        = $("#name_desc");
+var sortLevelASC        = $("#level_asc");
+var sortLevelDESC       = $("#level_desc");
+
+var sortName           = $("#sort_name");
 
 var ready_Edit          = 0;
 var index               = 0;
