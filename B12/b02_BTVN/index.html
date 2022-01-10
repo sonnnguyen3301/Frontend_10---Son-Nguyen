@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUTTON GAME</title>
+    <link rel="stylesheet" href="./css/mdb.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>Secret Button</header>
+    <main class="game-box">
+        <left id="area-list-button" class="box game_btn">
+            
+        </left>
+        <right class="box">
+           <div class="game_hint">
+                <p>Predict number:</p>
+                <div id="life_game" class="life">
+
+                </div>
+           </div>
+            <div id="notify" class="text_notify">
+
+            </div>
+        </right>
+    </main>
+    <footer>
+        <input type="hidden" id="input-id"/>
+        <button id="start_play" class="custom-btn btn">Play</button>
+        <button id="hint" class="custom-btn btn">Hints</button>
+        <button id="game_save" class="custom-btn btn">Save</button>
+    </footer>
+
+    
+
+</body>
+<script src="./js/default.js"></script>
+<script src="./js/function.js"></script>
+<script src="./js/main.js"></script>
+</html>
