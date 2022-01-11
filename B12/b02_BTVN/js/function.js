@@ -88,7 +88,8 @@ let new_notify_wrong = (index_button) =>{
     else{
         text = "You Lose";
         background_type = "bg-danger";
-        note = "The Secret Button was "+ right_btn.toString()+"! Sorry...";
+        BUTTONLIST[right_btn].color = "MediumSpringGreen";
+        note = "The Secret Button was "+ (right_btn + 1).toString()+"! Sorry...";
     }
     let str = 
         `   
