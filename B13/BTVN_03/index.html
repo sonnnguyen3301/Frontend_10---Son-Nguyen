@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.6/dist/css/autoComplete.min.css">
+</head>
+
+<body>
+    <div class="autoComplete_wrapper">
+        <input id="autoComplete" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.6/dist/autoComplete.min.js"></script>
+    <script>
+        const autoCompleteJS = new autoComplete({
+            placeHolder: "Search for Food...",
+            data: {
+                src: ["Sauce - Thousand Island", "Wild Boar - Tenderloin", "Goat - Whole Cut"],
+                cache: true,
+            },
+            resultItem: {
+                highlight: true
+            },
+            events: {
+                input: {
+                    selection: (event) => {
+                        const selection = event.detail.selection.value;
+                        autoCompleteJS.input.value = selection;
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
