@@ -194,4 +194,12 @@ const btnChosen = (id) => {
     load_Life(LIFE);
     load_button(BUTTONLIST);
 }   
+// ##### BUTTON - AUDIO ######
+function playAudio() { 
+    vid.play(); 
+} 
+
+function pauseAudio() { 
+    vid.pause(); 
+} 
 

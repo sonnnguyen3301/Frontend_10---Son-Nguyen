@@ -1,7 +1,7 @@
 $(document).ready(function () {
     let last_game = getLocalStorage(LOCAL);
     if(jQuery.isEmptyObject(last_game)){
-        number_button(25);
+        number_button(size);
         number_life(3);
         load_button(BUTTONLIST);
         load_Life(LIFE);
@@ -31,7 +31,7 @@ $(start_btn).click(function(e){
 
     list_button.css("background-color", "white");
     $(bg_button).css({"animation": ""});
-    number_button(25);
+    number_button(size);
     number_life(3);
     load_button(BUTTONLIST);
     load_Life(LIFE);
@@ -47,6 +47,21 @@ $(hint_btn).click(function(){
 $(save_btn).click(function(){
     saveLocal(LOCAL);
     alert("Đã save tiến độ trò chơi!");
+});
+
+// ##### BUTTON - SAVE GAME ######
+$(myAudio).click(function (e) { 
+    e.preventDefault();
+    if(switch_sound == 1){
+        switch_sound = 0;
+        pauseAudio();
+        $(".audio_active").attr("src", "./images/mute.png");
+        
+    }else{
+        switch_sound = 1;
+        $(".audio_active").attr("src", "./images/unmute.png");
+        playAudio();
+    }
 });
 
 

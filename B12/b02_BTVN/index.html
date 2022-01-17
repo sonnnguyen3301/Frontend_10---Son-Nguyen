@@ -11,8 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
+    <audio id="myAudio" controls autoplay loop>
+        <!-- <source src="./musics/ensolarado @ フリーBGM DOVA-SYNDROME OFFICIAL YouTube CHANNEL.mp3" type="audio/mpeg"> -->
+        <source src="./musics/✨샛별 - 🍋Lemon Cake🍰✨ (Royalty Free Music).mp3" type="audio/mpeg">
+    </audio>
     <header>Secret Button</header>
+    
     <main class="game-box">
+        <div class="sound">
+            <!-- <button class="audio" onclick="playAudio()" type="button">Play Audio</button>  onclick="pauseAudio()"-->
+            <button class="audio" type="button"><img class="audio_active" src="./images/unmute.png" alt=""></button> 
+        </div>
         <left id="area-list-button" class="box game_btn">
             
         </left>
@@ -26,6 +35,7 @@
             <div id="notify" class="text_notify">
 
             </div>
+            
         </right>
     </main>
     <footer>
@@ -34,9 +44,7 @@
         <button id="hint" class="custom-btn btn">Hints</button>
         <button id="game_save" class="custom-btn btn">Save</button>
     </footer>
-
-    
-
+        
 </body>
 <script src="./js/default.js"></script>
 <script src="./js/function.js"></script>
