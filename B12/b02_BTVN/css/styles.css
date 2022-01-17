@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+audio{
+    display: none;
+}
 body{
     background-color: #c8fae1;
 }
