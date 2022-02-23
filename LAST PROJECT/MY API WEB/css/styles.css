@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+item{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    color: black;
+}
+span{
+    font-size: 20px;
+    color: DeepSkyBlue;
+}
+pubdate{
+    display: block;
+    font-size: 1vw;
+    font-style: italic;
+    color: gray;
+}
+img{
+    width: 22rem;
+}
+thead{
+    background-color: rgb(46, 40, 40);
+    color: white;
+}
+
+tr img{
+    width: auto;
+}
+item{
+    position: relative;
+}
+.favorite-news {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    transition: 4s ease ease-in-out;
+}
+
+.item{
+    font-size: large;
+    display: flex;
+    margin-top: 0.6rem;
+}
+
+.item .detail{
+    margin-left: 1rem;
+    color: black;
+}
+.u-section-1 .u-sheet-1 {
+    min-height: 520px;
+  }
+  
+  .u-section-1 .u-layout-wrap-1 {
+    margin-top: 53px;
+    margin-bottom: 60px;
+  }
+  
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 400px;
+  }
+  
+  .u-section-1 .u-container-layout-1 {
+    padding: 30px;
+  }
+  
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 400px;
+  }
+  
+  .u-section-1 .u-container-layout-2 {
+    padding: 30px;
+  }
+  
+  @media (max-width: 1199px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 500px;
+    }
+  
+    .u-section-1 .u-layout-cell-1 {
+      min-height: 330px;
+    }
+  
+    .u-section-1 .u-layout-cell-2 {
+      min-height: 330px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .u-section-1 .u-layout-cell-1 {
+      min-height: 253px;
+    }
+  
+    .u-section-1 .u-layout-cell-2 {
+      min-height: 253px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .u-section-1 .u-layout-cell-1 {
+      min-height: 380px;
+    }
+  
+    .u-section-1 .u-container-layout-1 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .u-section-1 .u-layout-cell-2 {
+      min-height: 380px;
+    }
+  
+    .u-section-1 .u-container-layout-2 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .u-section-1 .u-layout-cell-1 {
+      min-height: 239px;
+    }
+  
+    .u-section-1 .u-layout-cell-2 {
+      min-height: 239px;
+    }
+  }
+

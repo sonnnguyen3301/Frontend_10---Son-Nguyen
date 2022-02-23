@@ -1,0 +1,104 @@
+
+
+
+var search_text             = $("#choices-text-preset-values");
+var inputSearch             = $(".search-input");
+var btnSearch               = $(".search-icon");
+var count_search            = $(".count-search");
+var myFavoriteNews          = $(".favorite-news");
+
+var list                    = [];
+var list_searched           = [];
+var List_All                = [];
+var list_favorite           = [];
+
+var search_test             = 0;
+
+
+
+var news_favorite           = $("#news_favorite");
+var news                    = $("#news");
+var news_family             = $("#news_family");
+var news_health             = $("#news_health");
+var news_entertain          = $("#news_entertain");
+var news_cars               = $("#news_cars");
+var news_travel             = $("#news_travel");
+var news_digital            = $("#news_digital");             
+var news_sports             = $("#news_sports");
+var news_talk               = $("#news_talk");
+var news_business           = $("#news_business");
+var news_world              = $("#news_world");
+
+
+var text_news0              = $(".text-box0");
+var text_news               = $(".text-box1");
+var text_news_health        = $(".text-box2");
+var text_news_cars          = $(".text-box3");
+var text_news_travel        = $(".text-box4");
+var text_news_digital       = $(".text-box5");
+var text_news_sport         = $(".text-box6");
+var text_news_entertain     = $(".text-box7");
+var text_news_talk          = $(".text-box8");
+var text_news_business      = $(".text-box9");
+var text_news_world         = $(".text-box10");
+
+
+
+var Item_news_list          = [];
+var Item_family_list        = [];
+var Item_health_list        = [];
+var Item_entertain_list     = [];
+var Item_cars_list          = [];
+var Item_travel_list        = [];
+var Item_digital_list       = [];
+var Item_sport_list         = [];
+var Item_talk_list          = [];
+var Item_business_list      = [];
+var Item_world_list         = [];
+
+
+var image_1                 = $(".u-image-1");
+var image_2                 = $(".u-image-2");
+var image_3                 = $(".u-image-3");
+var image_4                 = $(".u-image-4");
+var image_5                 = $(".u-image-5");
+var image_6                 = $(".u-image-6");
+var image_7                 = $(".u-image-7");
+var image_8                 = $(".u-image-8");
+var image_9                 = $(".u-image-9");
+var image_10                = $(".u-image-10");
+// ######### FAVORITE NEWS LOCAL #########
+const LOCAL_Favorite    = "FAVORITE_NEWS";
+
+
+// ######### GAME LOCAL #########
+const LOCAL             = "GAME_BUTTON";
+const size              = 25;
+
+var BUTTONLIST          = [];
+var LIFE                = [];
+var NOTE                = "";
+
+var list_button         = $("#area-list-button");
+var myAudio             = $(".audio");
+var start_btn           = $("#start_play");
+var hint_btn            = $("#hint");
+var save_btn            = $("#game_save");
+var id_input            = $("#input_id");
+var notify              = $("#notify");
+var life_game           = $("#life_game");
+var bg_button           = $(".game_btn");
+
+var right_btn           = 0;
+var step                = 0;
+var hint_number         = 0;    
+var index_btn           = 0;
+
+var switch_sound        = 1;
+var vid = document.getElementById("myAudio");
+vid.volume = 0.3;
+
+        
+
+
+
