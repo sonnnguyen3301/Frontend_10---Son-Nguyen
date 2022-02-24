@@ -65,7 +65,11 @@ $(document).ready(function () {
     $.ajax({
         type:"GET",
         url:'https://vnexpress.net/rss/tin-moi-nhat.rss',
+        beforeSend: function() {
+            loading("#news");
+        },
         success: function (response) {
+            $(".lds-roller").hide();
             var items = $(response).find('item');
             Item_news_list = get_API(items, Item_news_list);
             load_news(news, Item_news_list);
@@ -79,6 +83,10 @@ $(document).ready(function () {
     $.ajax({
         type:"GET",
         url:'https://vnexpress.net/rss/gia-dinh.rss',
+        
+        beforeSend: function() {
+            loading("#news_family");
+        },
         success: function (response) {
             var items = $(response).find('item');
             Item_family_list = get_API(items, Item_family_list);
@@ -90,6 +98,9 @@ $(document).ready(function () {
     $.ajax({
         type:"GET",
         url:'https://vnexpress.net/rss/suc-khoe.rss',
+        beforeSend: function() {
+            loading("#news_health");
+        },
         success: function (response) {
             var items = $(response).find('item');
             Item_health_list = get_API(items, Item_health_list);
@@ -101,6 +112,9 @@ $(document).ready(function () {
     $.ajax({
         type:"GET",
         url:'https://vnexpress.net/rss/oto-xe-may.rss',
+        beforeSend: function() {
+            loading("#news_cars");
+        },
         success: function (response) {
             var items = $(response).find('item');
             Item_cars_list = get_API(items, Item_cars_list);
@@ -112,6 +126,9 @@ $(document).ready(function () {
     $.ajax({
         type:"GET",
         url:'https://vnexpress.net/rss/du-lich.rss',
+        beforeSend: function() {
+            loading("#news_travel");
+        },
         success: function (response) {
             var items = $(response).find('item');
             Item_travel_list = get_API(items, Item_travel_list);
@@ -123,6 +140,9 @@ $(document).ready(function () {
     $.ajax({
         type:"GET",
         url:'https://vnexpress.net/rss/so-hoa.rss',
+        beforeSend: function() {
+            loading("#news_digital");
+        },
         success: function (response) {
             var items = $(response).find('item');
             Item_digital_list = get_API(items, Item_digital_list);
@@ -134,6 +154,9 @@ $(document).ready(function () {
     $.ajax({
         type:"GET",
         url:'https://vnexpress.net/rss/the-thao.rss',
+        beforeSend: function() {
+            loading("#news_sports");
+        },
         success: function (response) {
             var items = $(response).find('item');
             Item_sport_list = get_API(items, Item_sport_list);
@@ -145,6 +168,9 @@ $(document).ready(function () {
     $.ajax({
         type:"GET",
         url:'https://vnexpress.net/rss/giai-tri.rss',
+        beforeSend: function() {
+            loading("#news_entertain");
+        },
         success: function (response) {
             var items = $(response).find('item');
             Item_entertain_list = get_API(items, Item_entertain_list);
@@ -156,6 +182,9 @@ $(document).ready(function () {
     $.ajax({
         type:"GET",
         url:'https://vnexpress.net/rss/tam-su.rss',
+        beforeSend: function() {
+            loading("#news_talk");
+        },
         success: function (response) {
             var items = $(response).find('item');
             Item_talk_list = get_API(items, Item_talk_list);
@@ -167,6 +196,9 @@ $(document).ready(function () {
     $.ajax({
         type:"GET",
         url:'https://vnexpress.net/rss/kinh-doanh.rss',
+        beforeSend: function() {
+            loading("#news_business");
+        },
         success: function (response) {
             var items = $(response).find('item');
             Item_business_list = get_API(items, Item_business_list);
@@ -178,6 +210,9 @@ $(document).ready(function () {
     $.ajax({
         type:"GET",
         url:'https://vnexpress.net/rss/the-gioi.rss',
+        beforeSend: function() {
+            loading("#news_world");
+        },
         success: function (response) {
             var items = $(response).find('item');
             Item_world_list = get_API(items, Item_world_list);
@@ -189,6 +224,9 @@ $(document).ready(function () {
     $.ajax({
         type:"GET",
         url:"https://www.pnj.com.vn/blog/gia-vang/",
+        beforeSend: function() {
+            loading(".u-container-layout-2");
+        },
         error: function (request, error) {
             console.log(arguments);
             alert(" Can't do because: " + error);

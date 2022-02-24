@@ -411,3 +411,12 @@ let load_List = (LIST_GOLD_PRICE) =>{
 let saveLocalFavorite = (key, obj) => {
     localStorage.setItem(key, JSON.stringify(obj));
 }
+
+// ##### LOADING ######
+let loading = (id)=>{
+    str = `<div class="loading">
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>`;
+
+    $(id).append(str);
+}
