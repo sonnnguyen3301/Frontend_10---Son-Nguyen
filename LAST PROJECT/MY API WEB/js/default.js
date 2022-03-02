@@ -11,6 +11,7 @@ var list                    = [];
 var list_searched           = [];
 var List_All                = [];
 var list_favorite           = [];
+var list_favorite_str       = [];
 
 var search_test             = 0;
 
@@ -45,16 +46,27 @@ var text_news_world         = $(".text-box10");
 
 
 var Item_news_list          = [];
+var Item_news_list_str      = [];
 var Item_family_list        = [];
+var Item_family_list_str    = [];
 var Item_health_list        = [];
+var Item_health_list_str    = [];
 var Item_entertain_list     = [];
+var Item_entertain_list_str = [];
 var Item_cars_list          = [];
+var Item_cars_list_str      = [];
 var Item_travel_list        = [];
+var Item_travel_list_str    = [];
 var Item_digital_list       = [];
+var Item_digital_list_str   = [];
 var Item_sport_list         = [];
+var Item_sport_list_str     = [];
 var Item_talk_list          = [];
+var Item_talk_list_str      = [];
 var Item_business_list      = [];
+var Item_business_list_str  = [];
 var Item_world_list         = [];
+var Item_world_list_str     = [];
 
 
 var image_1                 = $(".u-image-1");

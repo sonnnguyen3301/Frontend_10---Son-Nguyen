@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 item{
     display: flex;
@@ -156,6 +157,61 @@ item{
       top: 56px;
       left: 12px;
     }
+
+    .paginationjs-pages ul{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      padding: 8px;
+      border-radius: 50px;
+      box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    }
+    .paginationjs-pages ul li{
+      list-style: none;
+      line-height: 45px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.3s ease;
+    }
+    .paginationjs-pages ul li{
+      list-style: none;
+      height: 45px;
+      width: 45px;
+      margin: 0 3px;
+      line-height: 45px;
+      border-radius: 50%;
+    }
+    .paginationjs{
+      display: flex;
+      justify-content: center;
+    }
+    .paginationjs-pages ul li.btn{
+      padding: 0 20px;
+      border-radius: 50px;
+    }
+    .paginationjs-pages li.active,
+    .paginationjs-pages ul li:hover,
+    .paginationjs-pages ul li:first-child:hover,
+    .paginationjs-pages ul li:last-child:hover{
+      color: #fff;
+      background: #20B2AA;
+    }
+    .paginationjs .paginationjs-pages li:hover > a{
+      color: #fff;
+    }
+    .paginationjs .paginationjs-pages li>a{
+      background-color: transparent;
+      color: #20B2AA;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .paginationjs .paginationjs-pages li>a:hover{
+      background-color: transparent;
+    }
     @keyframes lds-roller {
       0% {
         transform: rotate(0deg);
@@ -164,7 +220,6 @@ item{
         transform: rotate(360deg);
       }
     }
-    
   @media (max-width: 1199px) {
     .u-section-1 .u-sheet-1 {
       min-height: 500px;

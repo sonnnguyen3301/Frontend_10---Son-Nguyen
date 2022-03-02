@@ -1,16 +1,16 @@
 
 // ##### ADD NEWS ######
 let load_news = (ele, Item_list) =>{
-    str ='';
+    list    =[];
+    str     ='';
     Item_list.forEach((element) => {
         let index = list_favorite.map(object => object.title).indexOf(element.title);
         
         if(index != -1){
-            console.log(list_favorite[index].id)
             element.id = list_favorite[index].id;
             element.type = "../images/—Pngtree—beautiful two heart design with_5720547.png"; 
         }
-        str += 
+        str = 
         `   
         <item>
             <a href="${element.link}" target="_blank" rel="noopener noreferrer""><span>${element.title}</span>
@@ -27,9 +27,12 @@ let load_news = (ele, Item_list) =>{
             <img class="favorite-news" src="${element.type}" onclick="NewsBtnFavorite('${element.id}')" value=${element.id} value=${element.id} alt="Heart Coffee Mug - - Happy Valentine's Day Sister Animated Gif @clipartmax.com">
         </item>
         `
+        list.push(str);
     });
-    $(ele).html(str);
-}// ##### BUTTON - FUNCTION ######
+    // $(ele).html(str);
+    return list;
+}
+// ##### BUTTON - FUNCTION ######
 const NewsBtnFavorite = (id) => {
     let index = list_favorite.map(object => object.id).indexOf(id);
     if (index != -1){
@@ -41,9 +44,7 @@ const NewsBtnFavorite = (id) => {
         
         let index_btn = List_All.map(object => object.id).indexOf(id);
         if(!jQuery.isEmptyObject(List_All[index_btn])) list_favorite.push(List_All[index_btn]);
-        // console.log(List_All[index_btn])
         
-
         load_news(myFavoriteNews,list_favorite);
         saveLocalFavorite(LOCAL_Favorite,list_favorite);  
     }
@@ -51,7 +52,7 @@ const NewsBtnFavorite = (id) => {
 
 // ##### CHANGE BACKGROUND IMAGE ######
 let change_bgImage = (element, url) =>{
-    $(element).css("background-image", "url(" + url + ")");
+    $(element).css({"background-image": "url(" + url + ")","opacity:": "0.3"});
 }
 
 // ##### CHANGE TEXT ######
