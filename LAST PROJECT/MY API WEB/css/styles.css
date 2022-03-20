@@ -35,6 +35,21 @@ tr img{
 item{
     position: relative;
 }
+html {
+  scroll-behavior: smooth;
+}
+.custom-bg{
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  /* background-image: url(https://www.theanimedaily.com/wp-content/uploads/2022/01/tatsumaki-one-punch-man-wallpaper-hd-1920x1200-345216-768x480.jpg); */
+  background-position: 50% 50%;
+  background-size: cover;
+  }
+  .custom-bg .custom-btn-read{
+    align-self: end;
+  }
 .favorite-news {
     position: absolute;
     top: 0;
@@ -42,7 +57,9 @@ item{
     width: 2rem;
     transition: 4s ease ease-in-out;
 }
-
+.u-container-layout{
+  font-size: 1.5vw;
+}
 .item{
     font-size: large;
     display: flex;

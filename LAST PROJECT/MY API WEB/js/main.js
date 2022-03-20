@@ -19,7 +19,131 @@ $(document).ready(function () {
         note_last_save(last_game.note);
     }
     
+    // ##### HOME NEWS ######
+    $.ajax({
+      type:"GET",
+      url:'https://www.theanimedaily.com/category/anime/',
 
+      success: function (response) {
+          var article = $(response).find('article');
+          for(let i = 0; i<article.length;i++)
+          {
+            let img       = (i>=1) ? $(article[i]).find('.thumbnail-container img').attr('data-src') : $(article[i]).find('.thumbnail-container').attr('data-src');
+            let text_info = (i>=1) ? $(article[i]).find('.jeg_post_excerpt p')[0].innerText : "";
+            obj = {
+              link :  $(article[i]).find('.jeg_post_title a').attr('href'),
+              title : $(article[i]).find('.jeg_post_title a')[0].innerHTML,
+              date : $(article[i]).find('.jeg_meta_date a')[0].innerHTML.replaceAll('<i class="fa fa-clock-o"></i>',""),
+              info : text_info,
+              img : img
+            }
+            Home_anime_list.push(obj);
+          }
+          
+      }
+  });
+  $.ajax({
+    type:"GET",
+    url:'https://www.theanimedaily.com/category/anime/page/2/',
+
+    success: function (response) {
+        var article = $(response).find('article');
+        for(let i = 0; i<article.length;i++)
+        {
+          let img       = (i>=1) ? $(article[i]).find('.thumbnail-container img').attr('data-src') : $(article[i]).find('.thumbnail-container').attr('data-src');
+          let text_info = (i>=1) ? $(article[i]).find('.jeg_post_excerpt p')[0].innerText : "";
+          obj = {
+            link :  $(article[i]).find('.jeg_post_title a').attr('href'),
+            title : $(article[i]).find('.jeg_post_title a')[0].innerHTML,
+            date : $(article[i]).find('.jeg_meta_date a')[0].innerHTML.replaceAll('<i class="fa fa-clock-o"></i>',""),
+            info : text_info,
+            img : img
+          }
+          Home_anime_list.push(obj);
+        }
+        console.log(Home_anime_list)
+        change_Text(anime_title_1st,Home_anime_list[1].title);
+        change_Text(anime_info_1st,Home_anime_list[1].info);
+        change_attrBgImg(anime_img_1st,Home_anime_list[1].img);
+        change_attrHref(anime_href_1st,Home_anime_list[1].link);
+
+        change_Text(anime_title_2st,Home_anime_list[0].title);
+        change_Text(anime_info_2st,Home_anime_list[0].info);
+        change_attrBgImg(anime_img_2st,Home_anime_list[0].img);
+        change_attrHref(anime_href_2st,Home_anime_list[0].link);
+        
+        change_Text(anime_title_3st,Home_anime_list[2].title);
+        change_Text(anime_info_3st,Home_anime_list[2].info);
+        change_attrBgImg(anime_img_3st,Home_anime_list[3].img);
+        change_attrHref(anime_href_3st,Home_anime_list[2].link);
+        
+        change_Text(anime_title_4st,Home_anime_list[3].title);
+        change_Text(anime_info_4st,Home_anime_list[3].info);
+        change_attrBgImg(anime_img_4st,Home_anime_list[2].img);
+        change_attrHref(anime_href_4st,Home_anime_list[3].link);
+        
+        change_Text(anime_title_5st,Home_anime_list[4].title);
+        change_Text(anime_info_5st,Home_anime_list[4].info);
+        change_bgImage(anime_img_5st,Home_anime_list[4].img);
+        change_attrHref(anime_href_5st,Home_anime_list[4].link);
+
+        change_Text(anime_title_6st,Home_anime_list[5].title);
+        change_Text(anime_info_6st,Home_anime_list[5].info);
+        change_bgImage(anime_img_6st,Home_anime_list[5].img);
+        change_attrHref(anime_href_6st,Home_anime_list[5].link);
+
+        change_Text(anime_title_7st,Home_anime_list[6].title);
+        change_Text(anime_info_7st,Home_anime_list[6].info);
+        change_bgImage(anime_img_7st,Home_anime_list[6].img);
+        change_attrHref(anime_href_7st,Home_anime_list[6].link);
+        
+        change_Text(anime_title_8st,Home_anime_list[7].title);
+        change_Text(anime_info_8st,Home_anime_list[7].info);
+        change_bgImage(anime_img_8st,Home_anime_list[7].img);
+        change_attrHref(anime_href_8st,Home_anime_list[7].link);
+        
+        change_Text(anime_title_9st,Home_anime_list[8].title);
+        change_Text(anime_info_9st,Home_anime_list[8].info);
+        change_bgImage(anime_img_9st,Home_anime_list[8].img);
+        change_attrHref(anime_href_9st,Home_anime_list[8].link);
+
+        change_Text(anime_title_10st,Home_anime_list[9].title);
+        change_Text(anime_info_10st,Home_anime_list[9].info);
+        change_bgImage(anime_img_10st,Home_anime_list[9].img);
+        change_attrHref(anime_href_10st,Home_anime_list[9].link);
+
+        change_Text(anime_title_11st,Home_anime_list[10].title);
+        change_bgImage(anime_img_11st,Home_anime_list[10].img);
+        change_attrHref(anime_href_11st,Home_anime_list[10].link);
+
+        change_Text(anime_title_12st,Home_anime_list[12].title);
+        change_bgImage(anime_img_12st,Home_anime_list[12].img);
+        change_attrHref(anime_href_12st,Home_anime_list[12].link);
+
+        change_Text(anime_title_13st,Home_anime_list[13].title);
+        change_bgImage(anime_img_13st,Home_anime_list[13].img);
+        change_attrHref(anime_href_13st,Home_anime_list[13].link);
+
+        change_Text(anime_title_14st,Home_anime_list[14].title);
+        change_bgImage(anime_img_14st,Home_anime_list[14].img);
+        change_attrHref(anime_href_14st,Home_anime_list[14].link);
+
+        change_Text(anime_title_15st,Home_anime_list[15].title);
+        change_Text(anime_info_15st,Home_anime_list[15].info);
+        change_attrBgImg(anime_img_15st,Home_anime_list[15].img);
+        change_attrHref(anime_href_15st,Home_anime_list[15].link);
+
+        change_Text(anime_title_16st,Home_anime_list[16].title);
+        change_Text(anime_info_16st,Home_anime_list[16].info);
+        change_bgImage(anime_img_16st,Home_anime_list[16].img);
+        change_attrHref(anime_href_16st,Home_anime_list[16].link);
+        change_attrHref(anime_href_16st,Home_anime_list[16].link);
+        
+        change_Text(anime_title_17st,Home_anime_list[17].title);
+        change_Text(anime_info_17st,Home_anime_list[17].info);
+        change_attrHref(anime_href_17st,Home_anime_list[17].link);
+    }
+});
     // ##### BUTTON SEARCH ######
     $(btnSearch).click(function(){     
         if(search_test >= 2){
@@ -515,15 +639,24 @@ $(myAudio).click(function (e) {
 });
 
 // ##### BUTTON - FAVORITE NEWS ######
-$('body').on('click','img',function(e){
+$('body').on('click','.favorite-news',function(e){
     e.preventDefault();
     let img_attr    = $(this).attr("src");
-    if(img_attr == "../images/—Pngtree—beautiful two heart design with_5720547.png"){
+    if(window.location.pathname != "/index.html" && window.location.pathname != "/Home.html" )
+    {
+      if(img_attr == "../images/—Pngtree—beautiful two heart design with_5720547.png"){
         $(this).attr("src", "../images/pngfind.com-diamond-frame-png-6525224.png");
-    }else{
-        $(this).attr("src", "../images/—Pngtree—beautiful two heart design with_5720547.png");
+      }else{
+          $(this).attr("src", "../images/—Pngtree—beautiful two heart design with_5720547.png");
+      }
     }
 })
+$('body').on('click','.paginationjs a',function(e){
+  e.preventDefault();
+  document.documentElement.scrollTop = 0;
+})
+
+
 // ##### NEWS - FAVORITE ######
 let favorites = getLocalStorage(LOCAL_Favorite);
 if(!jQuery.isEmptyObject(favorites)){
@@ -546,6 +679,8 @@ if(!jQuery.isEmptyObject(favorites)){
   
     })('news_favorite');
   }
+
+
 
 
 

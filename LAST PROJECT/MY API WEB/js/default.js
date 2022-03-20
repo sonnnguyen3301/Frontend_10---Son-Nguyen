@@ -13,9 +13,76 @@ var List_All                = [];
 var list_favorite           = [];
 var list_favorite_str       = [];
 
+var Home_anime_list         = [];
 var search_test             = 0;
 
+var anime_title_1st           = $("#1st-home-title");
+var anime_title_2st           = $("#2st-home-title");
+var anime_title_3st           = $("#3st-home-title");
+var anime_title_4st           = $("#4st-home-title");
+var anime_title_5st           = $("#5st-home-title");
+var anime_title_6st           = $("#6st-home-title");
+var anime_title_7st           = $("#7st-home-title");
+var anime_title_8st           = $("#8st-home-title");
+var anime_title_9st           = $("#9st-home-title");
+var anime_title_10st          = $("#10st-home-title");
+var anime_title_11st          = $("#11st-home-title");
+var anime_title_12st          = $("#12st-home-title");
+var anime_title_13st          = $("#13st-home-title");
+var anime_title_14st          = $("#14st-home-title");
+var anime_title_15st          = $("#15st-home-title");
+var anime_title_16st          = $("#16st-home-title");
+var anime_title_17st          = $("#17st-home-title");
 
+var anime_img_1st           = $("#1st-home-img");
+var anime_img_2st           = $("#2st-home-img");
+var anime_img_3st           = $("#3st-home-img");
+var anime_img_4st           = $("#4st-home-img");
+var anime_img_5st           = $("#5st-home-img");
+var anime_img_6st           = $("#6st-home-img");
+var anime_img_7st           = $("#7st-home-img");
+var anime_img_8st           = $("#8st-home-img");
+var anime_img_9st           = $("#9st-home-img");
+var anime_img_10st          = $("#10st-home-img");
+var anime_img_11st          = $("#11st-home-img");
+var anime_img_12st          = $("#12st-home-img");
+var anime_img_13st          = $("#13st-home-img");
+var anime_img_14st          = $("#14st-home-img");
+var anime_img_15st          = $("#15st-home-img");
+var anime_img_16st          = $("#16st-home-img");
+
+
+var anime_info_1st           = $("#1st-home-info");
+var anime_info_2st           = $("#2st-home-info");
+var anime_info_3st           = $("#3st-home-info");
+var anime_info_4st           = $("#4st-home-info");
+var anime_info_5st           = $("#5st-home-info");
+var anime_info_6st           = $("#6st-home-info");
+var anime_info_7st           = $("#7st-home-info");
+var anime_info_8st           = $("#8st-home-info");
+var anime_info_9st           = $("#9st-home-info");
+var anime_info_10st          = $("#10st-home-info");
+var anime_info_15st          = $("#15st-home-info");
+var anime_info_16st          = $("#16st-home-info");
+var anime_info_17st          = $("#17st-home-info");
+
+var anime_href_1st           = $("#1st-home-href");
+var anime_href_2st           = $("#2st-home-href");
+var anime_href_3st           = $("#3st-home-href");
+var anime_href_4st           = $("#4st-home-href");
+var anime_href_5st           = $("#5st-home-href");
+var anime_href_6st           = $("#6st-home-href");
+var anime_href_7st           = $("#7st-home-href");
+var anime_href_8st           = $("#8st-home-href");
+var anime_href_9st           = $("#9st-home-href");
+var anime_href_10st          = $("#10st-home-href");
+var anime_href_11st          = $("#11st-home-href");
+var anime_href_12st          = $("#12st-home-href");
+var anime_href_13st          = $("#13st-home-href");
+var anime_href_14st          = $("#14st-home-href");
+var anime_href_15st          = $("#15st-home-href");
+var anime_href_16st          = $("#16st-home-href");
+var anime_href_17st          = $("#17st-home-href");
 
 var news_favorite           = $("#news_favorite");
 var news                    = $("#news");

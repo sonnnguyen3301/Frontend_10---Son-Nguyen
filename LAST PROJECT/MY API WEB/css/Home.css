@@ -1,6 +1,6 @@
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("../images/fcb14a161aa9547b4673c26e4bc92cdd.jpeg");
-  background-position: 50% 50%;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0)), url("../images/DYJxkPy.jpeg");
+  background-position: 50% 28%;
 }
 
 .u-section-1 .u-sheet-1 {
@@ -2431,7 +2431,7 @@
   }
 
   .u-section-5 .u-image-1 {
-    width: auto;
+    /* width: auto; */
   }
 
   .u-section-5 .u-group-2 {
@@ -2453,12 +2453,13 @@
   }
 
   .u-section-5 .u-image-2 {
-    height: auto;
+    /* height: auto; */
+
   }
 
   .u-section-5 .u-group-3 {
     width: 193px;
-    height: auto;
+    /* height: auto; */
   }
 
   .u-section-5 .u-container-layout-5 {
@@ -2476,7 +2477,7 @@
   }
 
   .u-section-5 .u-image-3 {
-    height: auto;
+    /* height: auto; */
   }
 
   .u-section-5 .u-group-4 {
@@ -2498,7 +2499,7 @@
   }
 
   .u-section-5 .u-image-4 {
-    width: auto;
+    /* width: auto; */
   }
 
   .u-section-5 .u-group-5 {

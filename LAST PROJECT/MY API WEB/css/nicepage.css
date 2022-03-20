@@ -5763,6 +5763,7 @@ section.u-image:not(.u-hover-box),
   flex: 1;
   max-width: 100%;
   transition-duration: inherit;
+  height: 100%;
 }
 .u-inner-container-layout,
 .u-container-layout > * {
@@ -15842,7 +15843,7 @@ section.u-opacity:before,
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 0;  
   right: 0;
   transition-duration: inherit;
   transition-property: opacity;
@@ -23884,12 +23885,12 @@ a.u-link.u-hover-palette-1-light-3:hover {
 .u-container-layout.u-container-layout.u-palette-1-base:before,
 .u-table-alt-palette-1-base tr:nth-child(even) {
   color: #ffffff;
-  background-color: #81c132;
+  background-color: #c5a05c;
 }
 .u-button-style.u-palette-1-base,
 .u-button-style.u-palette-1-base[class*="u-border-"] {
   color: #ffffff !important;
-  background-color: #81c132 !important;
+  background-color: #c5a05c !important;
 }
 .u-button-style.u-palette-1-base:hover,
 .u-button-style.u-palette-1-base[class*="u-border-"]:hover,
@@ -26004,7 +26005,7 @@ a.u-link.u-hover-grey-light-3:hover {
 .u-container-layout.u-container-layout.u-white:before,
 .u-table-alt-white tr:nth-child(even) {
   color: #111111;
-  background-color: #ffffff;
+  background-color: rgb(255,255,255,0.85);
 }
 .u-button-style.u-white,
 .u-button-style.u-white[class*="u-border-"] {

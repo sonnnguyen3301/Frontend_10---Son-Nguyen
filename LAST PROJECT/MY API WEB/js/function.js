@@ -54,7 +54,14 @@ const NewsBtnFavorite = (id) => {
 let change_bgImage = (element, url) =>{
     $(element).css({"background-image": "url(" + url + ")","opacity:": "0.3"});
 }
-
+// ##### CHANGE ATTRIBUTE IMAGE ######
+let change_attrBgImg = (element, url) =>{
+    $(element).attr("src", url);
+}
+// ##### CHANGE ATTRIBUTE HREF ######
+let change_attrHref = (element, url) =>{
+    $(element).attr("href", url);
+}
 // ##### CHANGE TEXT ######
 let change_Text = (element, text) =>{
     $(element).text(text);
